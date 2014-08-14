@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 
     if (options.host) {
       if (!(/\/$/).test(options.host)) options.host = options.host + '/';
-      file = options.host + options.outfile;
+      file = options.host + (options.outfileurl ? options.outfileurl : options.outfile);
     }
 
     grunt.verbose.subhead('Testing jasmine specs via phantom').or.writeln('Testing jasmine specs via PhantomJS');

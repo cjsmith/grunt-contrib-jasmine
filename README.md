@@ -100,6 +100,12 @@ The auto-generated specfile that phantomjs will use to run your tests.
 Automatically deleted upon normal runs. Use the `:build` flag to generate a SpecRunner manually e.g.
 `grunt jasmine:myTask:build`
 
+#### options.outfileurl
+Type: `String`  
+
+This is the relative url to use if you are running jasmine from a host and the outfile is not a relative path 
+to your website.
+
 #### options.keepRunner
 Type: `Boolean`  
 Default: `false`  
